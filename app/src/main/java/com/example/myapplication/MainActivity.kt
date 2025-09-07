@@ -59,9 +59,9 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Row(
-        horizontalArrangement = Arrangement.Center,
-        verticalAlignment = Alignment.CenterVertically,
+    Column (
+        horizontalAlignment = Alignment.CenterHorizontally,
+      verticalArrangement = Arrangement.spacedBy(10.dp),
         modifier = modifier.fillMaxWidth(1f)
 
     ){
@@ -71,6 +71,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
         textAlign = TextAlign.Center,
         color = Color(0xFFc67aff)
     )
+
     Text( text = "yutongq@bu.edu",
         modifier = modifier,
         textAlign = TextAlign.Center,
